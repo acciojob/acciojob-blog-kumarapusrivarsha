@@ -1,22 +1,13 @@
-//your JS code here. If required.
-// Display message when page loads
-
-window.onload = function(){
-
-    console.log("Welcome to Accio Jobs Blog Page");
-
-};
+console.log("Accio Jobs Blog Loaded Successfully");
 
 
+// Article click interaction
 
-// Add click interaction to article links
+let articles = document.querySelectorAll("article h2 a");
 
-const articleLinks = document.querySelectorAll("article h2 a");
+articles.forEach(function(article){
 
-
-articleLinks.forEach(function(link){
-
-    link.addEventListener("click",function(){
+    article.addEventListener("click",function(){
 
         alert("Opening Accio Jobs Article");
 
